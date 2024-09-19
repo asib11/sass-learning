@@ -1,0 +1,20 @@
+$header-bgcolor : #4287f5;
+$main-bgcolor : #75f542;
+$footer-bgcolor : #f56342;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: $header-bgcolor;
+}
+
+main {
+    background-color: $main-bgcolor;
+}
+
+footer {
+    background-color: $footer-bgcolor;
+}

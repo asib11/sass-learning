@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #4287f5;
+}
+
+main {
+  background-color: #75f542;
+}
+
+footer {
+  background-color: #f56342;
+}/*# sourceMappingURL=learningSass.css.map */
