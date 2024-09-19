@@ -8,6 +8,28 @@ header {
   background-color: #4287f5;
 }
 
+nav {
+  margin-top: 15px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  display: inline-block;
+  color: wheat;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  background-color: black;
+}
+
 main {
   background-color: #75f542;
 }
