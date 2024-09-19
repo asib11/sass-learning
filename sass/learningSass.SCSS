@@ -16,6 +16,12 @@ p{
     @include para-style(14px);
 }
 
+.about-p{
+    @extend p;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-top: 3px solid red;
+}
+
 nav {
     margin-top: 15px;
 
