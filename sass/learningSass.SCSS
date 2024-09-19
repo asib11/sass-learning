@@ -1,0 +1,37 @@
+@forward './base/index';
+@use './util/index' as variable;
+
+header {
+    background-color: variable.$header-bgcolor;
+}
+
+nav {
+    margin-top: 15px;
+
+    ul li {
+        display: inline-block;
+        margin: 0 15px;
+
+        a {
+            display: inline-block;
+            color: wheat;
+            text-decoration: none;
+            padding: 10px;
+            transition: 0.4s;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+    }
+}
+
+
+main {
+    background-color: variable.$main-bgcolor;
+}
+
+footer {
+    background-color: variable.$footer-bgcolor;
+}
