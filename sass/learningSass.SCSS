@@ -5,6 +5,17 @@ header {
     background-color: variable.$header-bgcolor;
 }
 
+@mixin para-style($size){
+    font-size: $size;
+    font-weight:300;
+    padding: 40px;
+    text-align: justify;
+}
+
+p{
+    @include para-style(14px);
+}
+
 nav {
     margin-top: 15px;
 
@@ -26,7 +37,6 @@ nav {
         }
     }
 }
-
 
 main {
     background-color: variable.$main-bgcolor;
