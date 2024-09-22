@@ -28,9 +28,7 @@ header {
 
 
 p{  
-    
     @include para-style();
-
 }
 
 .about-p{
@@ -67,4 +65,29 @@ main {
 
 footer {
     background-color: variable.$footer-bgcolor;
+}
+
+[class*='col-']{
+    float: left;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+    }
+}
+
+// while loop
+// $i: 1
+// @while $i<13 {
+//     .col-#{$i} {
+//         width: 100% / 12 * $i;
+//     }
+//     $i: $i + 1;
+// }
+
+#loop::after {
+    clear: both;
+    content: none;
+    display: table;
 }
