@@ -102,7 +102,7 @@ $colors: (
     color3: blue
 );
 
-@each $color in red, green, blue {
+@each $key,$color in $colors {
     .#{$color}-text {
         color: $color;
     }
