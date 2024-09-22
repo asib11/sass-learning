@@ -5,21 +5,23 @@ header {
     background-color: variable.$header-bgcolor;
 }
 
-@mixin fontSize($value){
-    @if $value == small{
+@mixin fontSize($value) {
+    @if $value ==small {
         font-size: 14px;
     }
-    @else if $value == medium {
+
+    @else if $value ==medium {
         font-size: 16px;
     }
-    @else{
+
+    @else {
         font-size: 20px;
     }
 }
 
-@mixin para-style(){
+@mixin para-style() {
     // font-size: $size;
-    font-weight:300;
+    font-weight: 300;
     padding: 40px;
     text-align: justify;
     @include fontSize(large)
@@ -27,11 +29,11 @@ header {
 
 
 
-p{  
+p {
     @include para-style();
 }
 
-.about-p{
+.about-p {
     @extend p;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-top: 3px solid red;
@@ -67,8 +69,10 @@ footer {
     background-color: variable.$footer-bgcolor;
 }
 
-[class*='col-']{
+[class*='col-'] {
     float: left;
+    background-color: white;
+    padding: 30px 0;
 }
 
 @for $i from 1 through 12 {
@@ -90,4 +94,16 @@ footer {
     clear: both;
     content: none;
     display: table;
+}
+
+$colors: (
+    color1: red,
+    color2: green,
+    color3: blue
+);
+
+@each $color in red, green, blue {
+    .#{$color}-text {
+        color: $color;
+    }
 }
