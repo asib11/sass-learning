@@ -5,15 +5,32 @@ header {
     background-color: variable.$header-bgcolor;
 }
 
-@mixin para-style($size){
-    font-size: $size;
+@mixin fontSize($value){
+    @if $value == small{
+        font-size: 14px;
+    }
+    @else if $value == medium {
+        font-size: 16px;
+    }
+    @else{
+        font-size: 20px;
+    }
+}
+
+@mixin para-style(){
+    // font-size: $size;
     font-weight:300;
     padding: 40px;
     text-align: justify;
+    @include fontSize(large)
 }
 
-p{
-    @include para-style(14px);
+
+
+p{  
+    
+    @include para-style();
+
 }
 
 .about-p{
